@@ -49,3 +49,6 @@
 [submodule "PlatinumSDK"]
 	path = PlatinumSDK
 	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/PlatinumSDK.git
+[submodule "AMR_WB_FT"]
+	path = AMR_WB_FT
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_WB_FT.git
