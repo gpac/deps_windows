@@ -46,3 +46,6 @@
 [submodule "zlib"]
 	path = zlib
 	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/zlib.git
+[submodule "PlatinumSDK"]
+	path = PlatinumSDK
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/PlatinumSDK.git
