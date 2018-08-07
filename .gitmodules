@@ -1,0 +1,48 @@
+[submodule "a52dec"]
+	path = a52dec
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/a52dec.git
+[submodule "AMR_NB"]
+	path = AMR_NB
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_NB.git
+[submodule "AMR_NB_FT"]
+	path = AMR_NB_FT
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_NB_FT.git
+[submodule "libogg"]
+	path = libogg
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libogg.git
+[submodule "libtheora"]
+	path = libtheora
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libtheora.git
+[submodule "libvorbis"]
+	path = libvorbis
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libvorbis.git
+[submodule "xvidcore"]
+	path = xvidcore
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/xvidcore.git
+[submodule "faad2"]
+	path = faad2
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/faad2.git
+[submodule "freetype"]
+	path = freetype
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/freetype.git
+[submodule "js"]
+	path = js
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/js.git
+[submodule "libjpg"]
+	path = libjpg
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libjpg.git
+[submodule "libmad"]
+	path = libmad
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libmad.git
+[submodule "libpng"]
+	path = libpng
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libpng.git
+[submodule "OpenJPEG"]
+	path = OpenJPEG
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/OpenJPEG.git
+[submodule "opensvc"]
+	path = opensvc
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/opensvc.git
+[submodule "zlib"]
+	path = zlib
+	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/zlib.git
