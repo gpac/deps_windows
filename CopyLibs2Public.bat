@@ -26,13 +26,16 @@ copy lib\win32\release\*.dll ..\gpac_public\bin\win32\release\
 copy lib\win32\release\*.manifest ..\gpac_public\bin\win32\release\
 copy lib\win32\debug\*.plg ..\gpac_public\bin\win32\debug\
 copy lib\win32\release\*.plg ..\gpac_public\bin\win32\release\
+
+copy build\msvc\2015\vc_redist.x86.exe ..\gpac_public\packagers\win32_64\nsis\
+
 if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
 wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
 unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
 :XULSDK_copy
 xcopy /i /e /q /y xulrunner-sdk ..\gpac_public\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
-unzip -n dektec_dtapi_201505.zip
+REM unzip -n dektec_dtapi_201505.zip
 if exist SDL-devel-1.2.15-VC.zip goto SDL_copy
 wget http://www.libsdl.org/release/SDL-devel-1.2.15-VC.zip
 unzip SDL-devel-1.2.15-VC.zip
@@ -61,13 +64,15 @@ copy lib\x64\debug\*.dll ..\gpac_public\bin\x64\debug\
 copy lib\x64\release\*.dll ..\gpac_public\bin\x64\release\
 copy lib\x64\release\*.manifest ..\gpac_public\bin\x64\release\
 
+copy build\msvc\2015\vc_redist.x64.exe ..\gpac_public\packagers\win32_64\nsis\
+
 if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
 wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
 unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
 :XULSDK_copy
 xcopy /i /e /q /y xulrunner-sdk ..\gpac_public\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
-unzip -n dektec_dtapi_201505.zip
+REM unzip -n dektec_dtapi_201505.zip
 if exist SDL-devel-1.2.15-VC.zip goto SDL_copy
 wget http://www.libsdl.org/release/SDL-devel-1.2.15-VC.zip
 unzip SDL-devel-1.2.15-VC.zip
@@ -79,6 +84,7 @@ copy SDL-1.2.15\lib\x64\*.lib ..\gpac_public\extra_lib\lib\x64\release\
 copy SDL-1.2.15\lib\x64\*.dll ..\gpac_public\bin\x64\debug\
 copy SDL-1.2.15\lib\x64\*.dll ..\gpac_public\bin\x64\release\
 GOTO done
+
 
 :MissingParameters
 Echo You must specified target architecture : either x86, x64 or all
