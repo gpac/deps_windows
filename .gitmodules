@@ -1,54 +1,54 @@
 [submodule "a52dec"]
 	path = a52dec
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/a52dec.git
+	url = https://github.com/gpac-buildbot/a52dec.git
 [submodule "AMR_NB"]
 	path = AMR_NB
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_NB.git
+	url = https://github.com/gpac-buildbot/AMR_NB.git
 [submodule "AMR_NB_FT"]
 	path = AMR_NB_FT
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_NB_FT.git
+	url = https://github.com/gpac-buildbot/AMR_NB_FT.git
 [submodule "libogg"]
 	path = libogg
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libogg.git
+	url = https://github.com/gpac-buildbot/libogg.git
 [submodule "libtheora"]
 	path = libtheora
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libtheora.git
+	url = https://github.com/gpac-buildbot/libtheora.git
 [submodule "libvorbis"]
 	path = libvorbis
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libvorbis.git
+	url = https://github.com/gpac-buildbot/libvorbis.git
 [submodule "xvidcore"]
 	path = xvidcore
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/xvidcore.git
+	url = https://github.com/gpac-buildbot/xvidcore.git
 [submodule "faad2"]
 	path = faad2
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/faad2.git
+	url = https://github.com/gpac-buildbot/faad2.git
 [submodule "freetype"]
 	path = freetype
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/freetype.git
+	url = https://github.com/gpac-buildbot/freetype.git
 [submodule "js"]
 	path = js
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/js.git
+	url = https://github.com/gpac-buildbot/js.git
 [submodule "libjpg"]
 	path = libjpg
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libjpg.git
+	url = https://github.com/gpac-buildbot/libjpg.git
 [submodule "libmad"]
 	path = libmad
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libmad.git
+	url = https://github.com/gpac-buildbot/libmad.git
 [submodule "libpng"]
 	path = libpng
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/libpng.git
+	url = https://github.com/gpac-buildbot/libpng.git
 [submodule "OpenJPEG"]
 	path = OpenJPEG
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/OpenJPEG.git
+	url = https://github.com/gpac-buildbot/OpenJPEG.git
 [submodule "opensvc"]
 	path = opensvc
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/opensvc.git
+	url = https://github.com/gpac-buildbot/opensvc.git
 [submodule "zlib"]
 	path = zlib
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/zlib.git
+	url = https://github.com/gpac-buildbot/zlib.git
 [submodule "PlatinumSDK"]
 	path = PlatinumSDK
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/PlatinumSDK.git
+	url = https://github.com/gpac-buildbot/PlatinumSDK.git
 [submodule "AMR_WB_FT"]
 	path = AMR_WB_FT
-	url = git@gitlab.enst.fr:gpac/gpac_build/deps_common/AMR_WB_FT.git
+	url = https://github.com/gpac-buildbot/AMR_WB_FT.git
