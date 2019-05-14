@@ -57,11 +57,13 @@ goto build_openhevc
 :build_openhevc
 call %MSCV_INIT% %MSCV_ARCH%
 
-echo Running make clean...
-"%BASH_EXE%" -c "export PATH=$PATH:/usr/local/bin:/usr/bin ; make clean"
+if not exist ffbuild\config.mak (
+	echo Running make clean...
+	"%BASH_EXE%" -c "export PATH=$PATH:/usr/local/bin:/usr/bin ; make clean"
 
-echo Running configure...
-"%BASH_EXE%" -c "export PATH=$PATH:/usr/local/bin:/usr/bin ; ./configure --toolchain=msvc --ld=link.exe  --target-os=%TARGET% --disable-iconv --disable-debug"
+	echo Running configure...
+	"%BASH_EXE%" -c "export PATH=$PATH:/usr/local/bin:/usr/bin ; ./configure --toolchain=msvc --ld=link.exe  --target-os=%TARGET% --disable-iconv --disable-debug"
+)
 
 echo Running make...
 "%BASH_EXE%" -c "export PATH=$PATH:/usr/local/bin:/usr/bin ; make openhevc-shared"
