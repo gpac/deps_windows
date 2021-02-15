@@ -1,54 +1,76 @@
 [submodule "a52dec"]
 	path = a52dec
 	url = https://github.com/gpac-buildbot/a52dec.git
+	ignore = dirty
 [submodule "AMR_NB"]
 	path = AMR_NB
 	url = https://github.com/gpac-buildbot/AMR_NB.git
+	ignore = dirty
 [submodule "AMR_NB_FT"]
 	path = AMR_NB_FT
 	url = https://github.com/gpac-buildbot/AMR_NB_FT.git
+	ignore = dirty
 [submodule "libogg"]
 	path = libogg
 	url = https://github.com/gpac-buildbot/libogg.git
+	ignore = dirty
 [submodule "libtheora"]
 	path = libtheora
 	url = https://github.com/gpac-buildbot/libtheora.git
+	ignore = dirty
 [submodule "libvorbis"]
 	path = libvorbis
 	url = https://github.com/gpac-buildbot/libvorbis.git
+	ignore = dirty
 [submodule "xvidcore"]
 	path = xvidcore
 	url = https://github.com/gpac-buildbot/xvidcore.git
+	ignore = dirty
 [submodule "faad2"]
 	path = faad2
 	url = https://github.com/gpac-buildbot/faad2.git
+	ignore = dirty
 [submodule "freetype"]
 	path = freetype
 	url = https://github.com/gpac-buildbot/freetype.git
+	ignore = dirty
 [submodule "js"]
 	path = js
 	url = https://github.com/gpac-buildbot/js.git
+	ignore = dirty
 [submodule "libjpg"]
 	path = libjpg
 	url = https://github.com/gpac-buildbot/libjpg.git
+	ignore = dirty
 [submodule "libmad"]
 	path = libmad
 	url = https://github.com/gpac-buildbot/libmad.git
+	ignore = dirty
 [submodule "libpng"]
 	path = libpng
 	url = https://github.com/gpac-buildbot/libpng.git
+	ignore = dirty
 [submodule "OpenJPEG"]
 	path = OpenJPEG
 	url = https://github.com/gpac-buildbot/OpenJPEG.git
+	ignore = dirty
 [submodule "opensvc"]
 	path = opensvc
 	url = https://github.com/gpac-buildbot/opensvc.git
+	ignore = dirty
 [submodule "zlib"]
 	path = zlib
 	url = https://github.com/gpac-buildbot/zlib.git
+	ignore = dirty
 [submodule "PlatinumSDK"]
 	path = PlatinumSDK
 	url = https://github.com/gpac-buildbot/PlatinumSDK.git
+	ignore = dirty
 [submodule "AMR_WB_FT"]
 	path = AMR_WB_FT
 	url = https://github.com/gpac-buildbot/AMR_WB_FT.git
+	ignore = dirty
+[submodule "nghttp2"]
+	path = nghttp2
+	url = https://github.com/gpac-buildbot/nghttp2.git
+	ignore = dirty
