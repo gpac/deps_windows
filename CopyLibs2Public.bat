@@ -32,11 +32,11 @@ copy lib\win32\release\*.plg ..\%GPAC_PUBLIC%\bin\win32\release\
 
 copy build\msvc\2015\vc_redist.x86.exe ..\%GPAC_PUBLIC%\packagers\win32_64\nsis\
 
-if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
-wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
-unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
-:XULSDK_copy
-xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
+rem if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
+rem wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
+rem unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
+rem :XULSDK_copy
+rem xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
 REM unzip -n dektec_dtapi_201505.zip
 if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
@@ -69,11 +69,11 @@ copy lib\x64\release\*.manifest ..\%GPAC_PUBLIC%\bin\x64\release\
 
 copy build\msvc\2015\vc_redist.x64.exe ..\%GPAC_PUBLIC%\packagers\win32_64\nsis\
 
-if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
-wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
-unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
-:XULSDK_copy
-xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
+rem if exist xulrunner-7.0.1.en-US.win32.sdk.zip goto XULSDK_copy
+rem wget --no-check-certificate https://ftp.mozilla.org/pub/xulrunner/releases/7.0.1/sdk/xulrunner-7.0.1.en-US.win32.sdk.zip
+rem unzip -n xulrunner-7.0.1.en-US.win32.sdk.zip
+rem :XULSDK_copy
+rem xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
 REM unzip -n dektec_dtapi_201505.zip
 if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
