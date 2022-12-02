@@ -92,3 +92,7 @@
 	path = nghttp2
 	url = https://github.com/gpac-buildbot/nghttp2.git
 	ignore = dirty
+[submodule "SDL2-VC"]
+	path = SDL2-VC
+	ignore = dirty
+	url = https://github.com/gpac-buildbot/SDL2-VC.git

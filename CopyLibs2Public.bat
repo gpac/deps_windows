@@ -39,16 +39,16 @@ rem :XULSDK_copy
 rem xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
 REM unzip -n dektec_dtapi_201505.zip
-if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
-wget http://www.libsdl.org/release/SDL2-devel-2.0.20-VC.zip
-unzip SDL2-devel-2.0.20-VC.zip
+rem if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
+rem wget http://www.libsdl.org/release/SDL2-devel-2.0.20-VC.zip
+rem unzip SDL2-devel-2.0.20-VC.zip
 :SDL_copy
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\SDL\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
-copy SDL2-2.0.20\include\ ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
-copy SDL2-2.0.20\lib\x86\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\win32\debug\
-copy SDL2-2.0.20\lib\x86\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\win32\release\
-copy SDL2-2.0.20\lib\x86\*.dll ..\%GPAC_PUBLIC%\bin\win32\debug\
-copy SDL2-2.0.20\lib\x86\*.dll ..\%GPAC_PUBLIC%\bin\win32\release\
+copy SDL2-VC\include\ ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
+copy SDL2-VC\lib\x86\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\win32\debug\
+copy SDL2-VC\lib\x86\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\win32\release\
+copy SDL2-VC\lib\x86\*.dll ..\%GPAC_PUBLIC%\bin\win32\debug\
+copy SDL2-VC\lib\x86\*.dll ..\%GPAC_PUBLIC%\bin\win32\release\
 IF "%~1"=="all" GOTO win64
 GOTO done
 
@@ -76,16 +76,16 @@ rem :XULSDK_copy
 rem xcopy /i /e /q /y xulrunner-sdk ..\%GPAC_PUBLIC%\extra_lib\include\xulrunner-sdk\
 :DekTec_copy
 REM unzip -n dektec_dtapi_201505.zip
-if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
-wget http://www.libsdl.org/release/SDL2-devel-2.0.20-VC.zip
-unzip SDL2-devel-2.0.20-VC.zip
+rem if exist SDL2-devel-2.0.20-VC.zip goto SDL_copy
+rem wget http://www.libsdl.org/release/SDL2-devel-2.0.20-VC.zip
+rem unzip SDL2-devel-2.0.20-VC.zip
 :SDL_copy
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\SDL\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
-copy SDL2-2.0.20\include\ ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
-copy SDL2-2.0.20\lib\x64\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\debug\
-copy SDL2-2.0.20\lib\x64\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\release\
-copy SDL2-2.0.20\lib\x64\*.dll ..\%GPAC_PUBLIC%\bin\x64\debug\
-copy SDL2-2.0.20\lib\x64\*.dll ..\%GPAC_PUBLIC%\bin\x64\release\
+copy SDL2-VC\include\ ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
+copy SDL2-VC\lib\x64\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\debug\
+copy SDL2-VC\lib\x64\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\release\
+copy SDL2-VC\lib\x64\*.dll ..\%GPAC_PUBLIC%\bin\x64\debug\
+copy SDL2-VC\lib\x64\*.dll ..\%GPAC_PUBLIC%\bin\x64\release\
 GOTO done
 
 
