@@ -96,3 +96,6 @@
 	path = SDL2-VC
 	ignore = dirty
 	url = https://github.com/gpac-buildbot/SDL2-VC.git
+[submodule "libcaption"]
+	path = libcaption
+	url = https://github.com/szatmary/libcaption

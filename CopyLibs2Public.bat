@@ -36,6 +36,8 @@ copy build\msvc\2015\vc_redist.x86.exe ..\%GPAC_PUBLIC%\packagers\win32_64\nsis\
 :includes
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\
 xcopy /e /k /h /i /Y include\ ..\%GPAC_PUBLIC%\extra_lib\include\
+if not exist ..\%GPAC_PUBLIC%\extra_lib\include\caption\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\caption\
+copy /Y libcaption\caption ..\%GPAC_PUBLIC%\extra_lib\include\caption
 
 :SDL_copy
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\SDL\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
