@@ -61,7 +61,7 @@
 [submodule "libpng"]
 	path = libpng
 	ignore = dirty
-	url = https://github.com/gpac-buildbot/libpng.git
+	url = https://github.com/glennrp/libpng.git
 	ignore = dirty
 [submodule "OpenJPEG"]
 	path = OpenJPEG

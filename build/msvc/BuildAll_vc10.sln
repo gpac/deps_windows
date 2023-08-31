@@ -17,8 +17,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libfaad", "..\..\faad2\libf
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libmad", "..\..\libmad\msvc++\libmad.vcxproj", "{2C6D8E2B-0110-4F77-9723-ACB7DE10183E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "..\..\libpng\projects\visualc6\libpng.vcxproj", "{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libamrnb", "..\..\AMR_NB\libamrnb.vcxproj", "{072E0B2C-23B2-4BF5-BAE1-F13F25E990F3}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libamrfloat", "..\..\AMR_NB_FT\libamrfloat.vcxproj", "{072E0D5C-23B2-4BF5-BAE1-F13F25E990F3}"
@@ -46,6 +44,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcaption", "libcaption.vcxproj", "{4DD92EB7-649A-417D-B249-FE90888B26BD}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlibvc", "zlibvc.vcxproj", "{8FD826F8-3739-44E6-8CC8-997122E53B8D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libpng", "libpng.vcxproj", "{D6973076-9317-4EF2-A0B8-B7A18AC0713E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,14 +107,6 @@ Global
 		{2C6D8E2B-0110-4F77-9723-ACB7DE10183E}.Release|Win32.Build.0 = Release|Win32
 		{2C6D8E2B-0110-4F77-9723-ACB7DE10183E}.Release|x64.ActiveCfg = Release|x64
 		{2C6D8E2B-0110-4F77-9723-ACB7DE10183E}.Release|x64.Build.0 = Release|x64
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Debug|Win32.ActiveCfg = Debug|Win32
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Debug|Win32.Build.0 = Debug|Win32
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Debug|x64.ActiveCfg = Debug|x64
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Debug|x64.Build.0 = Debug|x64
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Release|Win32.ActiveCfg = Release|Win32
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Release|Win32.Build.0 = Release|Win32
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Release|x64.ActiveCfg = Release|x64
-		{42D12B57-8361-401A-9A7C-CB3A2CE9DF30}.Release|x64.Build.0 = Release|x64
 		{072E0B2C-23B2-4BF5-BAE1-F13F25E990F3}.Debug|Win32.ActiveCfg = Debug|Win32
 		{072E0B2C-23B2-4BF5-BAE1-F13F25E990F3}.Debug|x64.ActiveCfg = Debug|x64
 		{072E0B2C-23B2-4BF5-BAE1-F13F25E990F3}.Release|Win32.ActiveCfg = Release|Win32
@@ -211,6 +203,14 @@ Global
 		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|Win32.Build.0 = Release|Win32
 		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x64.ActiveCfg = Release|x64
 		{8FD826F8-3739-44E6-8CC8-997122E53B8D}.Release|x64.Build.0 = Release|x64
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|Win32.Build.0 = Debug|Win32
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|x64.ActiveCfg = Debug|x64
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Debug|x64.Build.0 = Debug|x64
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|Win32.ActiveCfg = Release|Win32
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|Win32.Build.0 = Release|Win32
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|x64.ActiveCfg = Release|x64
+		{D6973076-9317-4EF2-A0B8-B7A18AC0713E}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
