@@ -1,64 +1,60 @@
-/* jconfig.h.  Generated automatically by configure.  */
-/* jconfig.cfg --- source file edited by configure script */
-/* see jconfig.doc for explanations */
+/* Version ID for the JPEG library.
+ * Might be useful for tests like "#if JPEG_LIB_VERSION >= 60".
+ */
+#define JPEG_LIB_VERSION  62
 
-#ifdef _WIN32_WCE
-#define HAVE_PROTOTYPES
-#define HAVE_UNSIGNED_CHAR
-#define HAVE_UNSIGNED_SHORT
-#define HAVE_STDDEF_H
-#define HAVE_STDLIB_H
+/* libjpeg-turbo version */
+#define LIBJPEG_TURBO_VERSION  3.0.0
 
-#ifndef __RPCNDR_H__
-typedef unsigned char boolean;
+/* libjpeg-turbo version in integer form */
+#define LIBJPEG_TURBO_VERSION_NUMBER  3000000
+
+/* Support arithmetic encoding when using 8-bit samples */
+#define C_ARITH_CODING_SUPPORTED 1
+
+/* Support arithmetic decoding when using 8-bit samples */
+#define D_ARITH_CODING_SUPPORTED 1
+
+/* Support in-memory source/destination managers */
+#define MEM_SRCDST_SUPPORTED  1
+
+/* Use accelerated SIMD routines when using 8-bit samples */
+#define WITH_SIMD 1
+
+/* This version of libjpeg-turbo supports run-time selection of data precision,
+ * so BITS_IN_JSAMPLE is no longer used to specify the data precision at build
+ * time.  However, some downstream software expects the macro to be defined.
+ * Since 12-bit data precision is an opt-in feature that requires explicitly
+ * calling 12-bit-specific libjpeg API functions and using 12-bit-specific data
+ * types, the unmodified portion of the libjpeg API still behaves as if it were
+ * built for 8-bit precision, and JSAMPLE is still literally an 8-bit data
+ * type.  Thus, it is correct to define BITS_IN_JSAMPLE to 8 here.
+ */
+#ifndef BITS_IN_JSAMPLE
+#define BITS_IN_JSAMPLE  8
 #endif
-#define HAVE_BOOLEAN		/* prevent jmorecfg.h from redefining it */
-#else
-#undef HAVE_PROTOTYPES
-#undef HAVE_UNSIGNED_CHAR
-#undef HAVE_UNSIGNED_SHORT
-#undef HAVE_STDDEF_H
-#undef HAVE_STDLIB_H
-#endif
 
-#undef void
-#undef const
-#undef CHAR_IS_UNSIGNED
-#undef NEED_BSD_STRINGS
-#undef NEED_SYS_TYPES_H
-#undef NEED_FAR_POINTERS
-#undef NEED_SHORT_EXTERNAL_NAMES
-/* Define this if you get warnings about undefined structures. */
-#undef INCOMPLETE_TYPES_BROKEN
-
-
-#ifdef JPEG_INTERNALS
+#ifdef _WIN32
 
 #undef RIGHT_SHIFT_IS_UNSIGNED
-#undef INLINE
-/* These are for configuring the JPEG memory manager. */
-#undef DEFAULT_MAX_MEM
-#undef NO_MKTEMP
 
-#ifdef __MINGW32__ 	 
-#define INLINE __inline__
-#endif //__MINGW32__ 	 
+/* Define "boolean" as unsigned char, not int, per Windows custom */
+#ifndef __RPCNDR_H__            /* don't conflict if rpcndr.h already read */
+typedef unsigned char boolean;
+#endif
+#define HAVE_BOOLEAN            /* prevent jmorecfg.h from redefining it */
 
-#endif /* JPEG_INTERNALS */
+/* Define "INT32" as int, not long, per Windows custom */
+#if !(defined(_BASETSD_H_) || defined(_BASETSD_H))   /* don't conflict if basetsd.h already read */
+typedef short INT16;
+typedef signed int INT32;
+#endif
+#define XMD_H                   /* prevent jmorecfg.h from redefining it */
 
-#ifdef JPEG_CJPEG_DJPEG
+#else
 
-#define BMP_SUPPORTED		/* BMP image file format */
-#define GIF_SUPPORTED		/* GIF image file format */
-#define PPM_SUPPORTED		/* PBMPLUS PPM/PGM image file format */
-#undef RLE_SUPPORTED		/* Utah RLE image file format */
-#define TARGA_SUPPORTED		/* Targa image file format */
+/* Define if your (broken) compiler shifts signed values as if they were
+   unsigned. */
+/* #undef RIGHT_SHIFT_IS_UNSIGNED */
 
-#undef TWO_FILE_COMMANDLINE
-#undef NEED_SIGNAL_CATCHER
-#undef DONT_USE_B_MODE
-
-/* Define this if you want percent-done progress reports from cjpeg/djpeg. */
-#undef PROGRESS_REPORT
-
-#endif /* JPEG_CJPEG_DJPEG */
+#endif

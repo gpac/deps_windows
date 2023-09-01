@@ -48,11 +48,6 @@
 	ignore = dirty
 	url = https://github.com/gpac-buildbot/js.git
 	ignore = dirty
-[submodule "libjpg"]
-	path = libjpg
-	ignore = dirty
-	url = https://github.com/gpac-buildbot/libjpg.git
-	ignore = dirty
 [submodule "libmad"]
 	path = libmad
 	ignore = dirty
