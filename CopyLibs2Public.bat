@@ -79,6 +79,13 @@ xcopy /e /k /h /i /Y include\ ..\%GPAC_PUBLIC%\extra_lib\include\
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\caption\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\caption\
 xcopy /e /k /h /i /Y libcaption\caption\ ..\%GPAC_PUBLIC%\extra_lib\include\caption
 
+:http3
+if not exist ..\%GPAC_PUBLIC%\extra_lib\include\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\
+xcopy /e /k /h /i /Y http3\include\ ..\%GPAC_PUBLIC%\extra_lib\include\
+copy http3\lib\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\release\
+copy http3\lib\*.lib ..\%GPAC_PUBLIC%\extra_lib\lib\x64\debug\
+copy http3\lib\*.dll ..\%GPAC_PUBLIC%\bin\x64\release\
+copy http3\lib\*.dll ..\%GPAC_PUBLIC%\bin\x64\debug\
 
 :SDL_copy
 if not exist ..\%GPAC_PUBLIC%\extra_lib\include\SDL\ mkdir ..\%GPAC_PUBLIC%\extra_lib\include\SDL\
